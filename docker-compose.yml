@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  terraformtest:
+    image: terraformtest
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 5000:5000
